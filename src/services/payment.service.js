@@ -27,7 +27,7 @@ module.exports = {
         amount: options.amount,
         currency: options.currency,
         description: "Restaurant Foods",
-        callback_url: `${FRONT_END_URL}/payment/success/${order._id}`,
+        callback_url: `${process.env.FRONT_END_URL}/payment/success/${order._id}`,
         callback_method: "get",
         // Remove order_id and notes if not supported by the API
       };
